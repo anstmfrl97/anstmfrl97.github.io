@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda Opening</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        @media screen and (min-width:768px) {
+            body {
+                background: black;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+            .logoBox {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10%;
+            }
+            .logo1,
+            .logo2 {
+                width: 500px;
+                display: flex;
+                justify-content: center;
+            }
+            .logo1_M {
+                display: none;
+            }
+            /* 빛 효과 */
+            .logo1:hover {
+                background: url(img/smoke.gif) no-repeat center;
+            }
+            .logo2:hover {
+                background: url(img/smoke2.gif) no-repeat center;
+            }
+        }
+        
+        @media screen and (max-width:767px) {
+            body {
+                background: black;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+            .logoBox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .logo1_M,
+            .logo2 {
+                width: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10%;
+                height: 200px;
+            }
+            img {
+                height: 70%;
+            }
+            .logo1_M {
+                background: url(img/smoke.gif) no-repeat center;
+                background-position: center;
+            }
+            .logo2 {
+                background: url(img/smoke2.gif) no-repeat center;
+            }
+            .logo1 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logoBox">
+        <div class="logo1">
+            <a href="D_Zelda_Main.html"><img src="img/logo/logo1.png"></a>
+        </div>
+        <div class="logo1_M">
+            <a href="M_Zelda_Top.html"><img src="img/logo/logo1.png"></a>
+        </div>
+        <div class="logo2">
+            <a href="#"><img src="img/logo/logo3.png"></a>
+        </div>
+    </div>
+</body>
+
+</html>
