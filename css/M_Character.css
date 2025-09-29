@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Pretendard_M';
+    font-weight: 500;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Medium.woff2') format('woff2'), url('../Font/woff/Pretendard-Medium.woff') format('woff'), url('../Font/ttf/Pretendard-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard_R';
+    font-weight: 400;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Regular.woff2') format('woff2'), url('../Font/woff/Pretendard-Regular.woff') format('woff'), url('../Font/ttf/Pretendard-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Light.woff2') format('woff2'), url('../Font/woff/Pretendard-Light.woff') format('woff'), url('../Font/ttf/Pretendard-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HyliaSerif';
+    font-weight: 500;
+    font-display: swap;
+    src: url('../Font/HyliaSerif.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'vitro';
+    font-weight: 400;
+    font-display: swap;
+    src: url('../Font/VITRO_CORE.ttf') format('truetype');
+}
+
+@media screen and (max-width:767px) {
+    h2 {
+        font-size: 3vh;
+        /* 30px */
+        color: #EDE9CA;
+    }
+    h3 {
+        font-size: 2.28vh;
+        /* 20px */
+        color: #EDE9CA;
+    }
+    h4 {
+        font-size: 2.1vh;
+        /* 18px */
+        color: #EDE9CA;
+    }
+    h5 {
+        font-size: 1.831vh;
+        /* 16px */
+        color: #EDE9CA;
+    }
+    p {
+        font-size: 1.602vh;
+        /* 14px */
+        color: #EDE9CA;
+    }
+    a {
+        font-size: 1vh;
+        /* 10px */
+        color: #EDE9CA;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    img {
+        vertical-align: top;
+    }
+    .skip {
+        display: none;
+    }
+    body {
+        background: #EDE9CA;
+    }
+    /* header style */
+    .header {
+        background: url(../img/patton.png) repeat 0 0;
+        background-size: cover;
+        width: 100%;
+        padding: 3% 0;
+        position: relative;
+        position: fixed;
+        z-index: 200;
+        max-height: 8vh;
+    }
+    .header>.logo {
+        width: 20%;
+        margin: 0 auto;
+    }
+    .header>.menu_btn {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+    .header>.menu_btn img {
+        vertical-align: bottom !important;
+    }
+    .header>.menu_btn .close {
+        position: absolute;
+        top: 25%;
+        left: 3%;
+    }
+    .nav {
+        position: fixed;
+        top: -100%;
+        /* 화면 위로 숨김 */
+        left: 0;
+        width: 100%;
+        background: url(../img/patton2.png) no-repeat center;
+        background-size: cover;
+        padding: 10vh 0 5vh;
+        z-index: 100;
+        transition: top 0.4s ease;
+    }
+    /* nav 열렸을 때 */
+    .nav.open {
+        top: 8vh;
+    }
+    /* 버튼 기본 상태 */
+    .menu_btn .skip {
+        display: none;
+        /* 닫기 버튼 숨김 */
+    }
+    /* nav 열렸을 때 버튼 전환 */
+    .nav.open~header .menu_btn a:first-child {
+        display: none;
+        /* 열기 버튼 숨김 */
+    }
+    .nav.open~header .menu_btn .skip {
+        display: inline-block;
+        /* 닫기 버튼 보임 */
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vh;
+    }
+    .nav ul li a {
+        font-size: 3vh;
+        font-family: 'HyliaSerif';
+        display: block;
+        color: #EDE9CA;
+    }
+    .nav ul li:hover a {
+        color: #00A3DB;
+    }
+    .nav_btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 4%;
+        bottom: 5vh;
+        gap: 3vh;
+    }
+    .nav_btn>.cart:hover img {
+        content: url(../img/Icon/shopping-cart_B.png);
+    }
+    .nav_btn>.Profile:hover img {
+        content: url(../img/Icon/Profile_B.png);
+    }
+    /* Character style */
+    .character_Back {
+        padding-top: 50vh;
+        width: 100%;
+        height: 100vh;
+        background: url(../img/03.character/characterBack.png) no-repeat center;
+        position: fixed;
+        z-index: -1;
+    }
+    .all_character {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20vh;
+        overflow-x: hidden;
+        gap: 20vh;
+        margin-bottom: 30vh;
+    }
+    .Character {
+        z-index: 1;
+        margin: 0 3vh;
+        display: flex;
+        flex-direction: column;
+        gap: 7vh;
+    }
+    .Character_title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero>.Character_title>img {
+        width: 30%;
+    }
+    .Champion>.Character_title>img {
+        width: 35%;
+    }
+    .Monster>.Character_title>img {
+        width: 36%;
+    }
+    .Character_title>h4 {
+        font-family: 'HyliaSerif';
+    }
+    .ch_int {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        position: relative;
+    }
+    .ch_int>h2 {
+        font-family: 'Hyliaserif';
+        padding-top: 2vh;
+    }
+    .ch_int>p {
+        font-family: 'pretendard';
+        text-align: center;
+        line-height: 4vh;
+        padding: 0 1vh 7vh 1vh;
+    }
+    .back_deco {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .back_deco>img {
+        width: 3%;
+    }
+    .CharacterBar {
+        width: 80%;
+        height: 8px;
+        background: url(../img/Icon/characterBar\(18\)_mobile.png)repeat-x;
+    }
+}

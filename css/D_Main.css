@@ -1,0 +1,878 @@
+@font-face {
+    font-family: 'Pretendard_M';
+    font-weight: 500;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Medium.woff2') format('woff2'), url('../Font/woff/Pretendard-Medium.woff') format('woff'), url('../Font/ttf/Pretendard-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard_R';
+    font-weight: 400;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Regular.woff2') format('woff2'), url('../Font/woff/Pretendard-Regular.woff') format('woff'), url('../Font/ttf/Pretendard-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Light.woff2') format('woff2'), url('../Font/woff/Pretendard-Light.woff') format('woff'), url('../Font/ttf/Pretendard-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HyliaSerif';
+    font-weight: 500;
+    font-display: swap;
+    src: url('../Font/HyliaSerif.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'vitro';
+    font-weight: 400;
+    font-display: swap;
+    src: url('../Font/VITRO_CORE.ttf') format('truetype');
+}
+
+@media screen and (min-width:768px) {
+    h2 {
+        font-size: 6vh;
+        /* 64px */
+        color: #EDE9CA;
+    }
+    h3 {
+        font-size: 5vh;
+        /* 48px */
+        color: #EDE9CA;
+    }
+    h4 {
+        font-size: 4vh;
+        /* 40px */
+        color: #EDE9CA;
+    }
+    h5 {
+        font-size: 4vh;
+        /* 36px */
+        color: #EDE9CA;
+    }
+    h6 {
+        font-size: 3.6vh;
+        /* 32px */
+        color: #EDE9CA;
+    }
+    p {
+        font-size: 3vh;
+        /* 30px */
+        color: #EDE9CA;
+        font-family: 'pretendard';
+    }
+    a {
+        font-size: 2.7vh;
+        /* 24px */
+        color: #EDE9CA;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    img {
+        vertical-align: top;
+    }
+    .skip {
+        display: none;
+    }
+    body {
+        background: #EDE9CA;
+        overflow-x: hidden;
+    }
+    .wrap {
+        overflow-y: auto;
+        scroll-behavior: smooth;
+    }
+    #wrap>section {
+        scroll-snap-align: start;
+        /* 상단 맞춤 */
+        height: 100vh;
+    }
+    /* header style */
+    .header {
+        background: url(../img/patton.png) repeat center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2%;
+        position: fixed;
+        z-index: 1000000000;
+        width: 96%;
+        height: 100px;
+    }
+    .logo {
+        width: 7%;
+        padding: 1% 0;
+    }
+    /* nav style */
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4vh;
+    }
+    .nav ul li a {
+        font-size: 1.5vw;
+        font-family: 'HyliaSerif';
+        display: block;
+        color: #EDE9CA;
+    }
+    .nav ul li:hover a {
+        color: #00A3DB;
+    }
+    .nav_btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6vh;
+    }
+    .nav_btn>.cart {
+        width: 2vw;
+    }
+    .nav_btn>.Profile {
+        width: 2vw;
+    }
+    .nav_btn>.cart:hover img {
+        content: url(../img/Icon/shopping-cart_B.png);
+    }
+    .nav_btn>.Profile:hover img {
+        content: url(../img/Icon/Profile_B.png);
+    }
+    /* top style */
+    #top {
+        scroll-snap-align: start;
+        /* z-index: 1; */
+    }
+    .top_img {
+        background: url(../img/01.top/top_Back.jpg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        /* z-index: 5; */
+        position: relative;
+    }
+    .top_text_Box {
+        /* z-index: 8; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+        position: absolute;
+        top: 30vh;
+        width: 100%;
+    }
+    .top_text_Box>p {
+        text-align: center;
+        line-height: 7vh;
+        font-weight: 400;
+    }
+    /* world style */
+    #world {
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 800%;
+        scroll-snap-align: start;
+        /* z-index: 10; */
+    }
+    #world section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    #world #section1 {
+        background: url(../img/02.world/worldBack01_Hyrule.png)no-repeat center;
+    }
+    #world #section2 {
+        background: url(../img/02.world/worldBack02_Eldin.png)no-repeat center;
+    }
+    #world #section3 {
+        background: url(../img/02.world/worldBack03_Lanayru.png)no-repeat center;
+    }
+    #world #section4 {
+        background: url(../img/02.world/worldBack04_Hebra.png)no-repeat center;
+    }
+    #world #section5 {
+        background: url(../img/02.world/worldBack05_Gerudo.png)no-repeat center;
+    }
+    #world #section6 {
+        background: url(../img/02.world/worldBack06_Necluda.png)no-repeat center;
+    }
+    #world #section7 {
+        background: url(../img/02.world/worldBack07_Faron.png)no-repeat center;
+    }
+    #world #section8 {
+        background: url(../img/02.world/worldBack08_Akkala.png) no-repeat center;
+    }
+    #world .textBoxL {
+        background: url(../img/02.world/back_L.png) no-repeat left top;
+        left: 0;
+    }
+    #world .textBoxR {
+        background: url(../img/02.world/back_R.png) no-repeat right top;
+        right: 0;
+    }
+    #world>section>.textBoxL>.text {
+        padding: 15% 10% 0;
+    }
+    #world>section>.textBoxR>.text {
+        padding: 15% 0 0 17%;
+    }
+    /* textBox style */
+    #world>section>.textBox {
+        /* z-index: 50; */
+        width: 45%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        opacity: 0;
+        visibility: hidden;
+        justify-content: center;
+    }
+    #world>section>.textBox>.text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vh;
+    }
+    #world .textBox>.text>.title {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: baseline;
+        gap: 3vh;
+    }
+    #world>section>.textBox>.text>.worldInt {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5vh;
+    }
+    #world .textBox>.text h2 {
+        font-family: 'Hyliaserif';
+    }
+    #world .textBox>.text h4 {
+        font-family: 'pretendard';
+        font-size: 3vh;
+    }
+    #world .textBox>.text p {
+        font-size: 2.6vh;
+        font-family: 'pretendard';
+    }
+    /* character style */
+    #character {
+        background: url(../img/03.character/characterBack.png) no-repeat center fixed;
+        background-size: cover;
+        /* z-index: 10; */
+        width: 100%;
+        height: 100vh;
+        scroll-snap-align: start;
+        overflow-y: auto;
+        scrollbar-width: none;
+        /* 스크롤바 숨김 */
+    }
+    .all_character {
+        padding-top: 20vh;
+        position: relative;
+        /* z-index: 1; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20vh;
+        margin-bottom: 30vh;
+    }
+    .Character {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25vh;
+    }
+    .Character_title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+    }
+    .Character>.Character_title>img {
+        width: 40%;
+    }
+    .Character_title>h4 {
+        font-family: 'HyliaSerif';
+    }
+    .ch_int {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+        position: relative;
+        height: 60vh;
+        width: 100vw;
+    }
+    .ch_int_L {
+        background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+        flex-direction: row-reverse;
+    }
+    .ch_int_R {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+        flex-direction: row;
+    }
+    .ch_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vh;
+    }
+    .ch_text>h2 {
+        font-family: 'Hyliaserif';
+        padding-top: 2vh;
+    }
+    .ch_text>p {
+        font-family: 'pretendard';
+        text-align: center;
+        line-height: 4vh;
+        padding: 0 1vh 7vh 1vh;
+    }
+    .CharacterBar {
+        width: 110%;
+        height: 8px;
+        background: url(../img/Icon/characterBar_desktop.png)repeat-x;
+    }
+    /* Rune_title style */
+    .Rune_title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+    }
+    .Rune_title>img {
+        width: 40%;
+    }
+    .Rune_title>h4 {
+        font-family: 'HyliaSerif';
+        color: #B99F65;
+    }
+    /* rune style */
+    #rune {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 5vh;
+        background: #EDE9CA;
+    }
+    .rune_slider {
+        width: 130vh;
+        height: 70vh;
+        margin: 5vh 0;
+        overflow: hidden;
+    }
+    .rune {
+        background: url(../img/patton.png) repeat center;
+        background-size: cover;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        cursor: grab;
+        height: 100%;
+    }
+    .rune_inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2vh 1vw;
+        gap: 3vh;
+    }
+    .rune_inner>img {
+        width: 55%;
+    }
+    .rune_inner>.runeIcon {
+        margin-top: 2vh;
+    }
+    .rune_inner>.title {
+        font-family: 'VITRO';
+        text-align: center;
+        font-size: 3vh;
+    }
+    .rune_inner>.title>h2 {
+        font-size: 3vh;
+    }
+    .rune_inner>.title>h3 {
+        font-size: 2.6vh;
+    }
+    .titleLine {
+        background: #B99F65;
+        width: 80%;
+        height: 1px;
+    }
+    .rune_inner>.text {
+        text-align: center;
+    }
+    .rune_inner>.text>p {
+        font-family: 'pretendard';
+        font-size: 2.3vh;
+    }
+    .rune_btns button {
+        width: 25px;
+        height: 26px;
+        margin: 0 0.5vw;
+        cursor: pointer;
+        border: none;
+        background: url(../img/Icon/btn0.png) no-repeat 0 -26px;
+        color: #fff;
+    }
+    .rune_btns button.active {
+        background: url(../img/Icon/btn0.png) no-repeat 0 0;
+        /* 활성화 상태 */
+    }
+    /* contents style */
+    #contents {
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 800%;
+        scroll-snap-align: start;
+        /* z-index: 10; */
+    }
+    #contents section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        gap: 10vh;
+    }
+    #contents #section1 {
+        background: url(../img/05.contents/contents1.png)no-repeat center;
+    }
+    #contents #section2 {
+        background: url(../img/05.contents/contents2.png)no-repeat center;
+    }
+    #contents #section3 {
+        background: url(../img/05.contents/contents3.png)no-repeat center;
+    }
+    #contents #section4 {
+        background: url(../img/05.contents/contents4.png)no-repeat center;
+    }
+    #contents #section5 {
+        background: url(../img/05.contents/contents5.png)no-repeat center;
+    }
+    #contents #section6 {
+        background: url(../img/05.contents/contents6.png)no-repeat center;
+    }
+    #contents #section7 {
+        background: url(../img/05.contents/contents7.png)no-repeat center;
+    }
+    #contents #section8 {
+        background: url(../img/05.contents/contents8.png)no-repeat center;
+    }
+    .split>span {
+        display: inline-block;
+    }
+    .split {
+        font-family: 'VITRO';
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+        color: #fff;
+    }
+    /* gaide style */
+    #gaide {
+        width: 100%;
+        height: 100vh;
+    }
+    .gaideslider {
+        width: 100%;
+        height: 60vh;
+        /* 원하는 높이로 조절 */
+        padding-top: 15vh;
+    }
+    .videoBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .gaide_title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 7vh;
+    }
+    .gaide_title>img {
+        width: 35%;
+    }
+    .gaide_title>h4 {
+        font-family: 'HyliaSerif';
+        color: #B99F65;
+    }
+    .videoBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video_container {
+        width: 100%;
+    }
+    .video_container iframe {
+        width: 890px;
+        height: 500px;
+    }
+    /* more style */
+    .more {
+        width: 100vw;
+        padding: 3vh 0;
+    }
+    .more a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+    }
+    .more a img {
+        width: 5%;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    }
+    .more a h3 {
+        font-family: 'Hyliaserif';
+        color: #B99F65;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    }
+    .more a:hover .moreIcon1 {
+        content: url(../img/Icon/btn1_H.png);
+    }
+    .more a:hover .moreIcon2 {
+        content: url(../img/Icon/btn2_H.png);
+    }
+    .more a:hover h3 {
+        color: #00A3DB;
+    }
+    /* userPlay style */
+    #userPlay {
+        background: url(../img/patton2.png) repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        padding-top: 15vh;
+    }
+    .UserPlay_title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .UserPlay_title>img {
+        width: 33%;
+    }
+    .UserPlay_title>h4 {
+        font-family: 'HyliaSerif';
+        color: #B99F65;
+    }
+    .userPlay_con {
+        height: 80vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5vh;
+        margin: 0 auto;
+    }
+    #userPlay .videoBox {
+        width: 80vh;
+        height: 56vh;
+        background-color: #EDE9CA;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+        /* 기본 스타일 */
+        opacity: 0;
+        transform: translateY(20px);
+        transition: transform 0.5s cubic-bezier(0.68, 7.55, 0.265, 1.55), opacity 0.5s ease-in-out;
+        /* 컨텐츠 간 간격 및 레이아웃 조정 */
+    }
+    #userPlay .videoBox h3 {
+        padding-top: 3vh;
+        align-self: flex-start;
+        font-family: 'VITRO';
+        font-size: 4vh;
+        color: #B99F65;
+    }
+    #userPlay .videoBox p {
+        align-self: flex-start;
+        font-family: 'Pretendard';
+        color: #B99F65;
+    }
+    /* 요소가 화면에 들어와서 애니메이션이 적용될 때의 상태 */
+    #userPlay .videoBox.bounce-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    /* 마우스를 올렸을 때의 효과 */
+    #userPlay .videoBox:hover {
+        transition: transform 0.5s cubic-bezier(0.68, 3.55, 0.265, 1.55);
+        transform: scale(1.05);
+        /* transform: translateY(-5px) scale(1.05); */
+        /* 위로 튀고 약간 확대 */
+        /* z-index: 10; */
+        /* 다른 요소 위에 표시 */
+        /* transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+    }
+    #userPlay .video_container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #userPlay .video_container {
+        position: relative;
+        padding-top: 56.25%;
+        height: 0;
+        width: 100%;
+    }
+    /* more style */
+    #userPlay .more a img {
+        width: 5%;
+    }
+    #userPlay .more a h3 {
+        color: #EDE9CA;
+    }
+    /* goods style */
+    #goods {
+        padding-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vh;
+        margin: 0 3vh 10vh;
+    }
+    .Goods_title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Goods_title>img {
+        width: 42%;
+    }
+    .Goods_title>h4 {
+        font-family: 'HyliaSerif';
+        color: #B99F65;
+    }
+    .carousel {
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 90%;
+        overflow: hidden;
+        display: flex;
+    }
+    .carousel>* {
+        flex: 0 0 100%;
+    }
+    .carousel:hover .group {
+        animation-play-state: paused;
+    }
+    .group {
+        display: flex;
+        gap: 20px;
+        padding-right: 20px;
+    }
+    .group_L {
+        will-change: transform;
+        animation: scrolling 10s linear infinite;
+    }
+    .group_R {
+        will-change: transform;
+        animation: scroll-right 10s linear infinite;
+    }
+    @keyframes scrolling {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    @keyframes scroll-right {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .goods_card {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+        justify-content: center;
+        align-items: center;
+        height: 9vw;
+        position: relative;
+    }
+    .goods_card .info {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.6);
+        transition: opacity 0.4s ease;
+        padding-top: 20px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .goods_card .info h3,
+    .goods_card .info p {
+        color: #ffffff;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 90%;
+        overflow: hidden;
+        text-align: center;
+        font-family: 'Pretendard_R';
+    }
+    .goods_card .info h3 {
+        font-size: 2.5vh;
+    }
+    .goods_card .info p {
+        font-size: 2vh;
+        font-weight: 200;
+        padding-top: 1vh;
+    }
+    .goods_card:hover .info {
+        opacity: 1;
+    }
+    /* goods Img */
+    .card1 {
+        background: url(../img/08.goods/goods1.png) no-repeat center;
+        background-size: cover;
+    }
+    .card2 {
+        background: url(../img/08.goods/goods2.png) no-repeat center;
+        background-size: cover;
+    }
+    .card3 {
+        background: url(../img/08.goods/goods3.png) no-repeat center;
+        background-size: cover;
+    }
+    .card4 {
+        background: url(../img/08.goods/goods4.png) no-repeat center;
+        background-size: cover;
+    }
+    .card5 {
+        background: url(../img/08.goods/goods5.png) no-repeat center;
+        background-size: cover;
+    }
+    .card6 {
+        background: url(../img/08.goods/goods6.png) no-repeat center;
+        background-size: cover;
+    }
+    .card7 {
+        background: url(../img/08.goods/goods7.png) no-repeat center;
+        background-size: cover;
+    }
+    .card8 {
+        background: url(../img/08.goods/goods8.png) no-repeat center;
+        background-size: cover;
+    }
+    .card9 {
+        background: url(../img/08.goods/goods9.png) no-repeat center;
+        background-size: cover;
+    }
+    .card10 {
+        background: url(../img/08.goods/goods10.png) no-repeat center;
+        background-size: cover;
+    }
+    .card11 {
+        background: url(../img/08.goods/goods11.png) no-repeat center;
+        background-size: cover;
+    }
+    .card12 {
+        background: url(../img/08.goods/goods12.png) no-repeat center;
+        background-size: cover;
+    }
+    .card13 {
+        background: url(../img/08.goods/goods13.png) no-repeat center;
+        background-size: cover;
+    }
+    .card14 {
+        background: url(../img/08.goods/goods14.png) no-repeat center;
+        background-size: cover;
+    }
+    .card15 {
+        background: url(../img/08.goods/goods15.png) no-repeat center;
+        background-size: cover;
+    }
+    .card16 {
+        background: url(../img/08.goods/goods16.png) no-repeat center;
+        background-size: cover;
+    }
+    .card17 {
+        background: url(../img/08.goods/goods17.png) no-repeat center;
+        background-size: cover;
+    }
+    .card18 {
+        background: url(../img/08.goods/goods18.png) no-repeat center;
+        background-size: cover;
+    }
+
+    /* footer style */
+    .footer{
+        margin-top: 50vh;
+        width: 90%;
+        padding: 1% 5%;
+        background: url(../img/patton.png) repeat center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .footer_text{
+        font-family: 'Pretendard';
+    }
+    .footer_text>p{
+        font-size: 2vh;
+        margin-bottom: 5px;
+    }
+}
