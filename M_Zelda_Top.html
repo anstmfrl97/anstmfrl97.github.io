@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>젤다 야생의 숨결 top</title>
+    <link href="css/M_Top.css" rel="stylesheet">
+    <script src="js/nav.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="menu_btn">
+                <a href="#"><img src="img/Icon/menu_open.png" alt="메뉴 열기 버튼"></a>
+                <a href="#" class="skip close"><img src="img/Icon/menu_close.png" alt="메뉴 닫기 버튼"></a>
+            </div>
+
+            <div class="logo">
+                <a href="opening.html"><img src="img/logo/header_logo.png" width="100%" alt="로고"></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="M_Zelda_Top.html">Top</a></li>
+            <li><a href="M_Zelda_World.html">World</a></li>
+            <li><a href="M_Zelda_Character.html">Character</a></li>
+            <li><a href="M_Zelda_Rune.html">Rune</a></li>
+            <li><a href="M_Zelda_Contents.html">Contents</a></li>
+            <li><a href="M_Zelda_Gaide.html">Gaide</a></li>
+            <li><a href="M_Zelda_UserPlay.html">UserPlay</a></li>
+            <li><a href="M_Zelda_Goods.html">Goods</a></li>
+        </ul>
+        <div class="nav_btn">
+            <div class="cart">
+                <a href="#"><img src="img/Icon/shopping-cart.png" width="85%" alt="장바구니 아이콘"></a>
+            </div>
+            <div class="Profile">
+                <a href="#"><img src="img/Icon/Profile.png" width="85%" alt="프로필 아이콘"></a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="top">
+        <div class="titleIcon"> <img src="img/Icon/title-frame-up.png" alt="내용설명 위쪽 아이콘"></div>
+        <h3>
+            100년 전, 하이랄은 부활한 가논에게 패한 후,<br> 영걸들과 하이랄 국왕이 목숨을 잃게 되고 <br> 링크 또한 깊은 잠에 빠지게 된다.<br><br> 그리고 100년 후,<br> 링크는 회생의 사당에서 눈을 뜨게 된다.<br><br> 링크는 젤다와 하이랄을 구할 수 있을 것인가.<br>
+        </h3>
+        <div class="titleIcon"> <img src="img/Icon/title-frame-down.png" alt="내용설명 아래쪽 아이콘"></div>
+    </article>
+
+    <script>
+        function redirectToMain() {
+            if (window.innerWidth >= 768) {
+                // 이미 index.html이 아니라면 강제 이동
+                if (!window.location.pathname.endsWith("opening.html")) {
+                    window.location.href = "opening.html";
+                }
+            }
+        }
+
+        // 페이지가 처음 로드될 때 체크
+        window.addEventListener("load", redirectToMain);
+
+        // 창 크기 변경될 때도 체크
+        window.addEventListener("resize", redirectToMain);     
+    </script>
+</body>
+
+</html>

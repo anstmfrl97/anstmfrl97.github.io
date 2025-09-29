@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>젤다 가이드</title>
+    <link href="css/M_Gaide.css" rel="stylesheet">
+    <script src="js/nav.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="menu_btn">
+                <a href="#"><img src="img/Icon/menu_open.png" alt="메뉴 열기 버튼"></a>
+                <a href="#" class="skip close"><img src="img/Icon/menu_close.png" alt="메뉴 닫기 버튼"></a>
+            </div>
+
+            <div class="logo">
+                <a href="opening.html"><img src="img/logo/header_logo.png" width="100%" alt="로고"></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="M_Zelda_Top.html">Top</a></li>
+            <li><a href="M_Zelda_World.html">World</a></li>
+            <li><a href="M_Zelda_Character.html">Character</a></li>
+            <li><a href="M_Zelda_Rune.html">Rune</a></li>
+            <li><a href="M_Zelda_Contents.html">Contents</a></li>
+            <li><a href="M_Zelda_Gaide.html">Gaide</a></li>
+            <li><a href="M_Zelda_UserPlay.html">UserPlay</a></li>
+            <li><a href="M_Zelda_Goods.html">Goods</a></li>
+        </ul>
+        <div class="nav_btn">
+            <div class="cart">
+                <a href="#"><img src="img/Icon/shopping-cart.png" width="85%" alt="장바구니 아이콘"></a>
+            </div>
+            <div class="Profile">
+                <a href="#"><img src="img/Icon/Profile.png" width="85%" alt="프로필 아이콘"></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="gaideBack">
+        <article class="Gaide_title">
+            <img src="img/Icon/titleBar_M_L.png" alt="타이틀바" width="100%">
+            <h4>Gaide</h4>
+            <img src="img/Icon/titleBar_M_R.png" alt="타이틀바" width="100%">
+        </article>
+        <article class="videoBox">
+            <div class="video_container">
+                <iframe src="https://www.youtube.com/embed/hDEKdI9uRc8?si=_Ae9JFoTXOCBvY1I" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>뉴비 꿀팁</h3>
+        </article>
+        <article class="videoBox">
+            <div class="video_container">
+                <iframe src="https://www.youtube.com/embed/VdUgXYgv47k?si=8VkhVmOeK9ZhQ_PH" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>패링 가이드</h3>
+        </article>
+        <article class="videoBox">
+            <div class="video_container">
+                <iframe src="https://www.youtube.com/embed/4ZnQjP-LP7w?si=zxpIz-PP3PdbjoOP" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>가디언 잡는 3가지 방법</h3>
+        </article>
+        <article class="videoBox">
+            <div class="video_container">
+                <iframe src="https://www.youtube.com/embed/thhvAJmbztk?si=o7utN62Zsog3jwl8" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>초반 무기 파밍 가이드</h3>
+        </article>
+        <article class="videoBox">
+            <div class="video_container">
+                <iframe src="https://www.youtube.com/embed/9s76rqTkYzs?si=9WePMdsVem_o9Hs1" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>5가지의 필수 요리</h3>
+        </article>
+        <article class="videoBox">
+            <div class="video_container">
+                <iframe src="https://www.youtube.com/embed/xuj1EFqb22M?si=gzYd1atggYpAjND2" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>레시피 쿡북 1탄</h3>
+        </article>
+    </section>
+    <section class="more">
+        <a href="#">
+            <img src="img/Icon/btn1.png" alt="more Icon" class="moreIcon1">
+            <h3>More</h3>
+            <img src="img/Icon/btn2.png" alt="more Icon" class="moreIcon2">
+        </a>
+    </section>
+    <script>
+        function redirectToMain() {
+            if (window.innerWidth >= 768) {
+                // 이미 index.html이 아니라면 강제 이동
+                if (!window.location.pathname.endsWith("opening.html")) {
+                    window.location.href = "opening.html";
+                }
+            }
+        }
+
+        // 페이지가 처음 로드될 때 체크
+        window.addEventListener("load", redirectToMain);
+
+        // 창 크기 변경될 때도 체크
+        window.addEventListener("resize", redirectToMain);     
+    </script>
+</body>
+
+</html>

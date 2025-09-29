@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda_BW_Main</title>
+    <link rel="stylesheet" href="css/D_Main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="opening.html"><img src="img/logo/header_logo.png" width="100%" alt="로고"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#world">World</a></li>
+                    <li><a href="#character">Character</a></li>
+                    <li><a href="#rune">Rune</a></li>
+                    <li><a href="#contents">Contents</a></li>
+                    <li><a href="#gaide">Gaide</a></li>
+                    <li><a href="#userPlay">UserPlay</a></li>
+                    <li><a href="#goods">Goods</a></li>
+                </ul>
+            </nav>
+            <div class="nav_btn">
+                <div class="cart">
+                    <a href="#"><img src="img/Icon/shopping-cart.png" width="100%" alt="장바구니 아이콘"></a>
+                </div>
+                <div class="Profile">
+                    <a href="#"><img src="img/Icon/Profile.png" width="100%" alt="프로필 아이콘"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="wrap">
+        <section id="top">
+            <article class="top_cont">
+                <div class="top_img"></div>
+                <div class="top_text_Box reveal reveal_BTT" data-delay="0.5">
+                    <div class="top_text_icon">
+                        <img src="img/Icon/title-frame-up.png" alt="배경 이야기 아이콘">
+                    </div>
+                    <p>100년 전, 재앙 가논이 부활하여 하이랄성을 덮쳤다.<br> 각 종족을 대표하는 영걸들과 공주인 젤다, 용사인 링크가 가논을 저지하려 했으나 강력한 가논의 힘 앞에 패배해
+                        버렸다.
+                        <br> 이사건으로 인해 4명의 영걸들과 하이랄 국왕이 목숨을 잃게되고, 링크 또한 깊은 잠에 빠지게 된다.<br> 그 후 젤다는 링크가 다시 하이랄 성을 구하러 올 때까지
+                        홀로 가논과 맞써 싸웠다.<br> 그리고 100년이 지난 시점으로 링크는 회생의 사당에서 눈을 뜨게 된다.<br> 링크는 젤다와 하이랄을 구할 수 있을 것인가.
+                    </p>
+                    <div class="top_text_icon"><img src="img/Icon/title-frame-down.png" alt="배경 이야기 아이콘"></div>
+                </div>
+            </article>
+        </section>
+        <section id="world">
+            <section id="section1" class=" img1">
+                <div class="textBox textBox1 textBoxL">
+                    <div class="text">
+                        <div class="title">
+                            <h2>Hyrule</h2>
+                            <h4>하이랄 전토</h4>
+                        </div>
+                        <div class="worldInt">
+                            <h4>
+                                넓고 반짝이는 평야가 아름다운 하이랄의 중앙 지역
+                            </h4>
+                            <p>
+                                하이랄의 중앙 지역으로 매우 넓은 면적을 차지하고 있다.<br> 하이랄 성과 그 광대한 평원,<br> 늪 저지대와 여러 작은 산으로 이루어진 구릉,<br>
+                                비밀스러운 대산림으로 이루어져 있다..<br> 소문으로는 대삼림안에는 코로그라고 하는 숲의 요정이 산다는데...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section2" class=" img2">
+                <div class="textBox textBox2 textBoxR">
+                    <div class="text">
+                        <div class="title">
+                            <h2>Eldin</h2>
+                            <h4>올딘 지방</h4>
+                        </div>
+                        <div class="worldInt">
+                            <h4>
+                                하이랄의 숨결이 느껴지는 작열의 화산지대
+                            </h4>
+                            <p>
+                                하이랄 북동쪽의 화산 데스마운틴이 있는 지방.<br> 고열 지역이며,고론족이 살고 있는 고론 시티가 있다.<br> 화산의 열기로 인해 방염복이나 물약 없이는
+                                진입이 어렵다.<br> 목제 장비를 착용하고 있으면 불에 타서 없어지고,<br> 나무화살은 불화살이 되며, 폭탄 화살은 꺼내자 마자 폭발한다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section3" class=" img3">
+                <div class="textBox textBox3 textBoxL">
+                    <div class="text">
+                        <div class="title">
+                            <h2>Lanayru</h2>
+                            <h4>라넬 지방</h4>
+                        </div>
+                        <div class="worldInt">
+                            <h4>
+                                한적한 습원 지대와 경치가 맑고 아름다운 물의 고장 </h4>
+                            <p>
+                                주위의 지형에 경사가 다소 급한 호수와 하천이 분포되어 있으며<br> 조라 족이 거주하는 조라의 마을이 자리 잡고 있다.<br> 신수 바-루타를 정화하기
+                                전까지는 조라의 마을이나<br> 라넬 대수원에서는 사시사철 비가 온다.<br> 분명히 물 속성 지역인데, 전기 속성 공격을 날리는 몬스터도 있다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //section3 -->
+
+            <section id="section4" class=" img4">
+                <div class="textBox textBox4 textBoxL">
+                    <div class="text">
+                        <div class="title">
+                            <h2>Hebra</h2>
+                            <h4>헤브라 지방</h4>
+                        </div>
+                        <div class="worldInt">
+                            <h4>
+                                은백의 세계가 펼쳐지는 영하의 산악지대 </h4>
+                            <p>
+                                헤브라 지방에 속하는 지명은 대체로 새의 이름에서 따온 경우가 많다.<br> 리토족의 리토 마을이 있는 지방.<br> 온통 눈과 얼음으로 덮인 혹한의 오지인
+                                헤브라산맥과<br> 산맥 동쪽에 위치한 크고 방대한 설원인 헤브라 대설원이 있다.<br> 추위로 죽고싶지 않다면 방한복을 필수로 챙길도록 하자.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //section4 -->
+
+            <section id="section5" class=" img5">
+                <div class="textBox textBox5 textBoxR">
+                    <div class="text">
+                        <div class="title">
+                            <h2>Geludo</h2>
+                            <h4>겔드 지방</h4>
+                        </div>
+                        <div class="worldInt">
+                            <h4>
+                                화려한 사막의 낙원 </h4>
+                            <p>
+                                겔드족이 살고 있는 사막 지방<br> 중앙 하이랄에서 사막 지역으로 진입할 때 겔드 협곡을 거치게 된다.<br> 겔드 지방의 지명은 대체로 보석과 광물의
+                                이름에서 따온 경우가 많다.<br> 겔드는 금남의 마을이라 남성은 출입할 수 없다.<br> 마을근처 오아시스에 설치한 카라카라 바자에서 교류가
+                                이루어진다.<br> 좀 소규모이긴 하나, 상점과 여관까지 갖춰져 있다.<br> 사막이라 낮엔 뜨겁고
+                                밤엔 춥다. 더위와 추위 모두 대비하도록 하자.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //section5 -->
+
+            <section id="section6" class=" img6">
+                <div class="textBox textBox6 textBoxL">
+                    <div class="text">
+                        <div class="title">
+                            <h2>Necluda</h2>
+                            <h4>하테르 지방</h4>
+                        </div>
+                        <div class="worldInt">
+                            <h4>
+                                고저차가 큰 산지와 분지가 모여있는 지역 </h4>
+                            <p>
+                                하이랄 남동쪽에 위치한 지방.<br> 지역이 넓어 동하테르와 서하테르로 구분된다.<br> 산속에 숨겨진 시커족 마을, 카카리코 마을과<br> 하일리아 인들이
+                                그나마 가장 많이 모여있는 하테노 마을이 있다.<br> 마을에 방문할 경우, 요리와 쇼핑으로 재정비를 하길 바란다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //section6 -->
+
+            <section id="section7" class=" img7">
+                <div class="textBox textBox7 textBoxL">
+                    <div class="text">
+                        <div class="title">
+                            <h2>Faron</h2>
+                            <h4>필로네 지방</h4>
+                        </div>
+                        <div class="worldInt">
+                            <h4>
+                                아름다운 바다가 어우러진 열대 지역 </h4>
+                            <p>
+                                열대우림 지역이라 비가 자주 온다.<br> 작은 호수와 강이 아주 많다.<br> 버섯과 식물류, 벌레류가 매우 많고 물소를 제외한 동물은 그리 많지
+                                않다.<br> 맥스두리안 나무 군락지가 있으며 칼날 바나나가 많이 자생하는 곳이다.<br> 아름다운 해변마을인 나크시마을이 있다.<br> 여유롭게 힐링을
+                                하고싶으면 나크시마을로 향하도록
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //section7 -->
+            <section id="section8" class=" img8">
+                <div class="textBox textBox8 textBoxL">
+                    <div class="text">
+                        <div class="title">
+                            <h2>Akkala</h2>
+                            <h4>추낙 지방</h4>
+                        </div>
+                        <div class="worldInt">
+                            <h4>
+                                단풍과 역사의 멋이 펼쳐진 고원 지대 </h4>
+                            <p>
+                                붉게 물든 가을의 풍경이 특징이다.<br> 지역 끝자락에 로베리라는 시커족 과학자의 고대 연구소가 있다.<br> 하이랄 끝자락에 위치한 '아무 것도 없는
+                                지역'으로 알려져 있다.<br> 마을을 개척하기 전까진 마구간과 연구소 말고는 정착지가 없다.<br> 사람이 살기 결코 나쁘지 않은 환경인데도 주변에 깔려
+                                있는 가디언들과 <br> 강력한 몬스터들 때문에 개척이 더디다.<br> 필로네 지방만큼은
+                                아니지만 벼락을 동반한 폭우가 자주 내리는 편이다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="character">
+            <section class="all_character">
+                <section class="Character hero">
+                    <article class="Character_title">
+                        <img src="img/Icon/titleBar_D_L.png" alt="타이틀바">
+                        <h4>Zelda & Link</h4>
+                        <img src="img/Icon/titleBar_D_R.png" alt="타이틀바">
+                    </article>
+                    <article class="ch_int ch_int_L link">
+                        <img src="img/03.character/link.png" width="35%" alt="링크">
+                        <div class="ch_text">
+                            <h2>Link</h2>
+                            <div class="CharacterBar"></div>
+                            <p>
+                                모든 기억을 잃어버린 채로 눈을 뜬 청년.<br> 신비한 목소리에 이끌려<br> 먼 옛날에 받은 부탁을 떠올리고<br> 광대한 하이랄에서의 여정에 뛰어들게
+                                된다.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="ch_int ch_int_R zelda">
+                        <img src="img/03.character/zelda.png" width="35%" alt="젤다">
+                        <div class="ch_text">
+                            <h2>Zelda</h2>
+                            <div class="CharacterBar"></div>
+                            <p>
+                                하이랄 왕국의 공주.<br> 호기심과 탐구심, 의협심이 담대하며 착실한 성품을 지녔다.<br> 마음 속에는 깊은 콤플렉스를 갖고있다.<br> 세계 곳곳에
+                                흩어져 있는<br>고대 유적의 조사를 독자적으로 행하고 있다.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="Character Champion">
+                    <article class="Character_title">
+                        <img src="img/Icon/titleBar_D_L.png" alt="타이틀바">
+                        <h4>Champion</h4>
+                        <img src="img/Icon/titleBar_D_R.png" alt="타이틀바">
+                    </article>
+                    <article class="ch_int ch_int_L mipa">
+                        <img src="img/03.character/mipa.png" width="35%" alt="미파">
+                        <div class="ch_text">
+                            <h2>mipa</h2>
+                            <div class="CharacterBar"></div>
+                            <p>
+                                조라족의 왕녀.<br> 신수 바·루타를 조종할 권한을 갖고 있다.<br> 내성적이고 부끄러움을 많이 타지만<br> 상냥하고 고운 마음씨를 가졌다.<br>
+                                목숨을 잃은 자도 회생시킬 수 있는<br> 부활 및 재생 능력'미파의 기도'의 소유자.<br> 주무기는 '광린의 창'이다.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="ch_int ch_int_R Daruk">
+                        <img src="img/03.character/Daruk.png" width="35%" alt="다르케르">
+                        <div class="ch_text">
+                            <h2>Daruk</h2>
+                            <div class="CharacterBar"></div>
+                            <p>
+                                신수 바·루다니아를 조정하는 권한을 가지고 있다.<br> 평상시엔 냉정하고 침착한 성격이지만<br> 전투에 임할땐 용감무쌍하게 돌변한다.<br> 순간적으로
+                                방어막을 만들어 내는 능력인<br> ‘다르케르의 수호’의 소유자.<br> 주무기는 커다란 대검 '거암 크러셔'다.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="ch_int ch_int_L Urbosa">
+                        <img src="img/03.character/Urbosa.png" width="35%" alt="우르보사">
+                        <div class="ch_text">
+                            <h2>Urbosa</h2>
+                            <div class="CharacterBar"></div>
+                            <p>
+                                높은 긍지와 자존심을 지닌 겔드족의 리더.<br> 시원시원하고 쉽게 흔들리지 않는 성격을 가지고 있다.<br> 신수 바·나보리스를 조작할 권한을 갖고
+                                있다.<br> 손가락을 튕기면 벼락을 내리치는<br> ’우르보사의 분노’의 소유자.<br> 검에 전류를 둘러 휘두르는 등 다채로운 응용도 가능하다.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="ch_int ch_int_R Revali">
+                        <img src="img/03.character/Revali.png" width="35%" alt="리발">
+                        <div class="ch_text">
+                            <h2>Revali</h2>
+                            <div class="CharacterBar"></div>
+                            <p>
+                                리토족의 최고의 전사.<br> 호승심과 승부욕으로 가득 찼으며,<br> 자존심이 매우 강하다.<br> 신수 바·메도를 조종하는 권한을 가졌다.<br>
+                                날갯짓으로 순간적인 상승 기류를 일으켜 날아오르는<br> ’리발의 용맹’를 개발한 천재.<br> 사용하는 무기는 참수리의 활이다.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="Character Monster">
+                    <article class="Character_title">
+                        <img src="img/Icon/titleBar_D_L.png" alt="타이틀바">
+                        <h4>Monster</h4>
+                        <img src="img/Icon/titleBar_D_R.png" alt="타이틀바">
+                    </article>
+                    <article class="ch_int ch_int_L Bokoblin">
+                        <img src="img/03.character/Bokoblin.png" width="35%" alt="보코블린">
+                        <div class="ch_text">
+                            <h2>Bokoblin</h2>
+                            <div class="CharacterBar"></div>
+                            <p>
+                                하이랄의 대표 몬스터.<br> 돼지가 꿀꿀거리는 것과 비슷한 소리를 낸다.<br> 검, 창, 활 등 다양한 종류의 무기를 사용한다.<br> 가끔 말을 타고
+                                있을 때도 있다.<br> 기본적으로 무리를 지어 생활한다.<br> 보코블린을 벌을 무서워 한다는데...
+                            </p>
+                        </div>
+                    </article>
+                    <article class="ch_int ch_int_R Guardian">
+                        <img src="img/03.character/Guardian.png" width="35%" alt="가디언">
+                        <div class="ch_text">
+                            <h2>Guardian</h2>
+                            <div class="CharacterBar"></div>
+                            <p>
+                                원래 재앙 가논을 쓰러뜨리기 위해<br> 과거의 시커족이 개발한 양산형 기계 군단.<br> 하지만 부활한 가논에 의해 오염되어<br> 사람들을 공격하고
+                                하이랄을 초토화시킨다.<br> 긴 시간이 흐르며 대부분의 가디언은 고장났지만,<br> 일부 가디언은 100년이 지난 뒤에도 멀쩡하게 활동한다.<br> 물에
+                                빠지면 즉사한다는 약점이 있다고 한다.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="ch_int ch_int_L Calamity Ganon">
+                        <img src="img/03.character/Calamity Ganon.png" width="35%" alt="재앙 가논">
+                        <div class="ch_text">
+                            <h2>Calamity Ganon</h2>
+                            <div class="CharacterBar"></div>
+                            <p>
+                                죽음과 환생을 거듭하며 탄생한 살아있는 재앙.<br> 거대한 몸집과 수많은 팔다리가 달려있는<br> 기괴한 형태이며<br> 괴수의 울음소리로밖에 목소리를 들을
+                                수가 없다.<br> 붉은 달은 가논의 영향으로 알려져 있으며<br> 영걸들을 살해한 커스 가논들은 자신이<br> 만들어낸 분신이다.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+
+            </section>
+
+        </section>
+        <section id="rune">
+            <article class="Rune_title">
+                <img src="img/Icon/titleBar_M_L.png" alt="타이틀바" width="100%">
+                <h4>Rune</h4>
+                <img src="img/Icon/titleBar_M_R.png" alt="타이틀바" width="100%">
+            </article>
+            <div class="swiper-container rune_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/bomb.png" alt="리모컨 폭탄" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>리모컨 폭탄</h2>
+                                <h3>Remote Bombs</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    원격 조작으로 기폭시킬 수 있다.<br> 폭발로 몬스터에게 대미지를 주거나<br> 물건을 부술 수도 있고<br> 원형과 사각형이 있어<br> 상황에
+                                    맞춰 사용할 수 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/Magnesis.png" alt="마그넷 캐치" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>마그넷 캐치</h2>
+                                <h3>Magnesis</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    금속으로 된 물건을 자력으로 움직인다.<br> 발사되는 자력을 맞히면<br> 금속 물건을 잡을 수 있고<br> 자력으로 잡은 물건은<br> 들어올려
+                                    자유롭게 움직일 수 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/cryonis.png" alt="아이스 메이커" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>아이스 메이커</h2>
+                                <h3>Cryonis</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    수면에 얼음 기둥을 만든다.<br> 얼음 기둥은 매우 단단하며 녹지 않는다.<br> 물가에서 발판이나 장애물로<br> 이용할 수 있으며 만든
+                                    얼음에<br> 한 번 더 사용하면 파괴할 수 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/Stasis.png" alt="타임 록" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>타임 록</h2>
+                                <h3>Stasis</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    물체의 시간을 멈춘다.<br> 시간을 멈춘 대상에 충격을 가하면<br> 움직이는 힘을 축적시킬 수 있고<br> 축적된 힘을 잘 사용하면<br> 거대한
+                                    물체를 움직이는 것도 가능하다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/camera.png" alt="사진기" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>사진기</h2>
+                                <h3>Camera</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    보이는 풍경을 순간적으로 그림에 담는다.<br> 풍경이 담긴 그림은 앨범에 저장된다.<br> 하이랄 도감과 연동되고 있으며<br> 찍으면 자동으로
+                                    등록되는 편리한 기능도 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/cycle.png" alt="마스터 바이크 제로" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>마스터 바이크 제로</h2>
+                                <h3>Master cycle Zero</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    수면에 얼음 기둥을 만든다.<br> 얼음 기둥은 매우 단단하며 녹지 않는다.<br> 물가에서 발판이나 장애물로<br> 이용할 수 있으며 만든
+                                    얼음에<br> 한 번 더 사용하면 파괴할 수 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/bomb.png" alt="리모컨 폭탄" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>리모컨 폭탄</h2>
+                                <h3>Remote Bombs</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    원격 조작으로 기폭시킬 수 있다.<br> 폭발로 몬스터에게 대미지를 주거나<br> 물건을 부술 수도 있고<br> 원형과 사각형이 있어<br> 상황에
+                                    맞춰 사용할 수 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/Magnesis.png" alt="마그넷 캐치" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>마그넷 캐치</h2>
+                                <h3>Magnesis</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    금속으로 된 물건을 자력으로 움직인다.<br> 발사되는 자력을 맞히면<br> 금속 물건을 잡을 수 있고<br> 자력으로 잡은 물건은<br> 들어올려
+                                    자유롭게 움직일 수 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/cryonis.png" alt="아이스 메이커" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>아이스 메이커</h2>
+                                <h3>Cryonis</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    수면에 얼음 기둥을 만든다.<br> 얼음 기둥은 매우 단단하며 녹지 않는다.<br> 물가에서 발판이나 장애물로<br> 이용할 수 있으며 만든
+                                    얼음에<br> 한 번 더 사용하면 파괴할 수 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/Stasis.png" alt="타임 록" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>타임 록</h2>
+                                <h3>Stasis</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    물체의 시간을 멈춘다.<br> 시간을 멈춘 대상에 충격을 가하면<br> 움직이는 힘을 축적시킬 수 있고<br> 축적된 힘을 잘 사용하면<br> 거대한
+                                    물체를 움직이는 것도 가능하다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/camera.png" alt="사진기" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>사진기</h2>
+                                <h3>Camera</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    보이는 풍경을 순간적으로 그림에 담는다.<br> 풍경이 담긴 그림은 앨범에 저장된다.<br> 하이랄 도감과 연동되고 있으며<br> 찍으면 자동으로
+                                    등록되는 편리한 기능도 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                    <div class="swiper-slide rune">
+                        <div class="rune_inner">
+                            <img src="img/04.rune/cycle.png" alt="마스터 바이크 제로" class="runeIcon">
+                            <img src="img/Icon/title-frame-up.png" alt="본문 장식">
+                            <div class="title">
+                                <h2>마스터 바이크 제로</h2>
+                                <h3>Master cycle Zero</h3>
+                            </div>
+                            <div class="titleLine"></div>
+                            <div class="text">
+                                <p>
+                                    수면에 얼음 기둥을 만든다.<br> 얼음 기둥은 매우 단단하며 녹지 않는다.<br> 물가에서 발판이나 장애물로<br> 이용할 수 있으며 만든
+                                    얼음에<br> 한 번 더 사용하면 파괴할 수 있다.
+                                </p>
+                            </div>
+                            <img src="img/Icon/title-frame-down.png" alt="본문 장식">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 섹션 이동 버튼 -->
+            <div class="section-buttons rune_btns">
+                <button data-slide="0"></button>
+                <button data-slide="1"></button>
+                <button data-slide="2"></button>
+                <button data-slide="3"></button>
+                <button data-slide="4"></button>
+                <button data-slide="5"></button>
+            </div>
+        </section>
+        <section id="contents">
+            <section id="section1" class="parallax__item">
+                <h3 class="split">넓은 오픈 월드</h3>
+                <h4 class="split">다양한 환경을 모험하고 살아남으세요!</h4>
+            </section>
+            <!-- //section1 -->
+
+            <section id="section2" class="parallax__item">
+                <h3 class="split">몬스터 무리</h3>
+                <h4 class="split">몬스터를 해치우고 무기를 업그레이드 하세요!</h4>
+            </section>
+            <!-- //section2 -->
+
+            <section id="section3" class="parallax__item">
+                <h3 class="split">시커타워</h3>
+                <h4 class="split">시커타워를 활성화 하고 맵을 밝히세요!</h4>
+            </section>
+            <!-- //section3 -->
+
+            <section id="section4" class="parallax__item">
+                <h3 class="split">이가단</h3>
+                <h4 class="split">재앙 가논을 추종하는 이가단을 해치우세요!</h4>
+            </section>
+            <!-- //section4 -->
+
+            <section id="section5" class="parallax__item">
+                <h3 class="split">다양한 레시피</h3>
+                <h4 class="split">요리해서 체력과 스테미나를 회복하세요.</h4>
+            </section>
+            <!-- //section5 -->
+
+            <section id="section6" class="parallax__item">
+                <h3 class="split">파마의 사당</h3>
+                <h4 class="split">사당을 깨고 체력과 스테미나를 늘리세요.</h4>
+            </section>
+            <!-- //section6 -->
+
+            <section id="section7" class="parallax__item">
+                <h3 class="split">미니게임</h3>
+                <h4 class="split">다양한 미니게임을 찾아 즐겨보세요.</h4>
+            </section>
+            <!-- //section7 -->
+
+            <section id="section8" class="parallax__item">
+                <h3 class="split">귀여운 요정, 코로그</h3>
+                <h4 class="split">수상한 곳에서 코로그를 찾아 가방을 늘리세요.</h4>
+            </section>
+            <!-- //section8 -->
+
+        </section>
+        <div id="gaide">
+            <div class="gaideslider">
+                <article class="gaide_title">
+                    <img src="img/Icon/titleBar_M_L.png" alt="타이틀바" width="100%">
+                    <h4>Gaide</h4>
+                    <img src="img/Icon/titleBar_M_R.png" alt="타이틀바" width="100%">
+                </article>
+                <div class="gaideSwiper swiper-wrapper">
+                    <div class="videoBox swiper-slide">
+                        <div class="video_container">
+                            <iframe src="https://www.youtube.com/embed/hDEKdI9uRc8?si=_Ae9JFoTXOCBvY1I"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="videoBox swiper-slide">
+                        <div class="video_container">
+                            <iframe src="https://www.youtube.com/embed/VdUgXYgv47k?si=8VkhVmOeK9ZhQ_PH"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                    <div class="videoBox swiper-slide">
+                        <div class="video_container">
+                            <iframe src="https://www.youtube.com/embed/4ZnQjP-LP7w?si=zxpIz-PP3PdbjoOP"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                    <div class="videoBox swiper-slide">
+                        <div class="video_container">
+                            <iframe src="https://www.youtube.com/embed/thhvAJmbztk?si=o7utN62Zsog3jwl8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="videoBox swiper-slide">
+                        <div class="video_container">
+                            <iframe src="https://www.youtube.com/embed/9s76rqTkYzs?si=9WePMdsVem_o9Hs1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <h3>5가지의 필수 요리</h3>
+                    </div>
+                    <div class="videoBox swiper-slide">
+                        <div class="video_container">
+                            <iframe src="https://www.youtube.com/embed/xuj1EFqb22M?si=gzYd1atggYpAjND2"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <section class="more">
+                    <a href="#">
+                        <img src="img/Icon/btn1_B.png" alt="more Icon" class="moreIcon1">
+                        <h3>More</h3>
+                        <img src="img/Icon/btn2_B.png" alt="more Icon" class="moreIcon2">
+                    </a>
+                </section>
+            </div>
+        </div>
+
+        <section id="userPlay">
+            <article class="UserPlay_title">
+                <img src="img/Icon/titleBar_M_L.png" alt="타이틀바" width="100%">
+                <h4>UserPlay</h4>
+                <img src="img/Icon/titleBar_M_R.png" alt="타이틀바" width="100%">
+            </article>
+            <section class="userPlay_con">
+                <article class="videoBox">
+                    <div class="video_container">
+                        <iframe src="https://www.youtube.com/embed/hPzTYQd-uyI?si=1VnhHb1k94hIUqWa"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h3>도감 채우기 몰아보기</h3>
+                    <p>2시간 전</p>
+                </article>
+                <article class="videoBox">
+                    <div class="video_container">
+                        <iframe src="https://www.youtube.com/embed/5KDsxMy8ho4?si=cO-KMTK7L3DJdSsa"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h3>안녕, 마지막 바이크</h3>
+                    <p>2025. 7. 25.</p>
+                </article>
+                <article class="videoBox">
+                    <div class="video_container">
+                        <iframe src="https://www.youtube.com/embed/4crL8ICGPGs?si=a3Mq-1ObA78W3sCF"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h3>시커스톤 하나로 엔딩까지</h3>
+                    <p>2025. 3. 5.</p>
+                </article>
+            </section>
+            <section class="more">
+                <a href="#">
+                    <img src="img/Icon/btn1.png" alt="more Icon" class="moreIcon1">
+                    <h3>More</h3>
+                    <img src="img/Icon/btn2.png" alt="more Icon" class="moreIcon2">
+                </a>
+            </section>
+        </section>
+        <section id="goods">
+            <article class="Goods_title">
+                <img src="img/Icon/titleBar_M_L.png" alt="타이틀바" width="100%">
+                <h4>Goods</h4>
+                <img src="img/Icon/titleBar_M_R.png" alt="타이틀바" width="100%">
+            </article>
+
+            <div class="carousel carousel_L">
+                <div class="group group_L">
+                    <div class="goods_card card1">
+                        <div class="info">
+                            <h3>하트 뱃지</h3>
+                            <p>₩11,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card2">
+                        <div class="info">
+                            <h3>조나우 날개 러그</h3>
+                            <p>₩83,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card3">
+                        <div class="info">
+                            <h3>마스터소드 뱃지</h3>
+                            <p>₩14,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card4">
+                        <div class="info">
+                            <h3>비석 뱃지</h3>
+                            <p>₩13,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card5">
+                        <div class="info">
+                            <h3>폭탄꽃 파우치</h3>
+                            <p>₩16,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card6">
+                        <div class="info">
+                            <h3>하이랄 머그컵</h3>
+                            <p>₩16,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card7">
+                        <div class="info">
+                            <h3>코로그 키링</h3>
+                            <p>₩7,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card8">
+                        <div class="info">
+                            <h3>마스터소드 노트</h3>
+                            <p>₩15,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card9">
+                        <div class="info">
+                            <h3>데크나무 레고</h3>
+                            <p>₩400,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group group_L">
+                    <div class="goods_card card1">
+                        <div class="info">
+                            <h3>하트 뱃지</h3>
+                            <p>₩11,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card2">
+                        <div class="info">
+                            <h3>조나우 날개 러그</h3>
+                            <p>₩83,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card3">
+                        <div class="info">
+                            <h3>마스터소드 뱃지</h3>
+                            <p>₩14,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card4">
+                        <div class="info">
+                            <h3>비석 뱃지</h3>
+                            <p>₩13,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card5">
+                        <div class="info">
+                            <h3>폭탄꽃 파우치</h3>
+                            <p>₩16,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card6">
+                        <div class="info">
+                            <h3>하이랄 머그컵</h3>
+                            <p>₩16,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card7">
+                        <div class="info">
+                            <h3>코로그 키링</h3>
+                            <p>₩7,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card8">
+                        <div class="info">
+                            <h3>마스터소드 노트</h3>
+                            <p>₩15,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card9">
+                        <div class="info">
+                            <h3>데크나무 레고</h3>
+                            <p>₩400,000</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel carousel_R">
+                <div class="group group_R">
+                    <div class="goods_card card10">
+                        <div class="info">
+                            <h3>보물상자 키링</h3>
+                            <p>₩16,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card11">
+                        <div class="info">
+                            <h3>코로그 에코백</h3>
+                            <p>₩37,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card12">
+                        <div class="info">
+                            <h3>코로그 파우치</h3>
+                            <p>₩37,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card13">
+                        <div class="info">
+                            <h3>하이랄 케이스</h3>
+                            <p>₩27,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card14">
+                        <div class="info">
+                            <h3>젤다 키링</h3>
+                            <p>₩11,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card15">
+                        <div class="info">
+                            <h3>하이랄 글라스</h3>
+                            <p>₩11,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card16">
+                        <div class="info">
+                            <h3>젤다 핸드타올</h3>
+                            <p>₩6,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card17">
+                        <div class="info">
+                            <h3>코로그 부채 세트</h3>
+                            <p>₩19,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card  card18">
+                        <div class="info">
+                            <h3>하이랄 텀블러</h3>
+                            <p>₩32,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group group_R">
+                    <div class="goods_card card10">
+                        <div class="info">
+                            <h3>보물상자 키링</h3>
+                            <p>₩16,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card11">
+                        <div class="info">
+                            <h3>코로그 에코백</h3>
+                            <p>₩37,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card12">
+                        <div class="info">
+                            <h3>코로그 파우치</h3>
+                            <p>₩37,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card13">
+                        <div class="info">
+                            <h3>하이랄 케이스</h3>
+                            <p>₩27,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card14">
+                        <div class="info">
+                            <h3>젤다 키링</h3>
+                            <p>₩11,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card15">
+                        <div class="info">
+                            <h3>하이랄 글라스</h3>
+                            <p>₩11,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card16">
+                        <div class="info">
+                            <h3>젤다 핸드타올</h3>
+                            <p>₩6,500</p>
+                        </div>
+                    </div>
+                    <div class="goods_card card17">
+                        <div class="info">
+                            <h3>코로그 부채 세트</h3>
+                            <p>₩19,000</p>
+                        </div>
+                    </div>
+                    <div class="goods_card  card18">
+                        <div class="info">
+                            <h3>하이랄 텀블러</h3>
+                            <p>₩32,000</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <section class="more">
+                <a href="#">
+                    <img src="img/Icon/btn1_B.png" alt="more Icon" class="moreIcon1">
+                    <h3>More</h3>
+                    <img src="img/Icon/btn2_B.png" alt="more Icon" class="moreIcon2">
+                </a>
+            </section>
+        </section>
+    </section>
+    <footer class="footer">
+        <a href="opening.html"><img src="img/logo/header_logo.png" alt="젤다 로고"></a>
+
+        <div class="footer_text">
+            <p>제작자 ㅣ 문슬기</p>
+            <p>주소 ㅣ 서울특별시 관악구 신림로</p>
+            <p>단순 팬심 홈페이지 입니다.</p>
+            <p>저작권은 모두 닌텐도에 있습니다.</p>
+
+        </div>
+    </footer>
+    <script>
+        function redirectToMain() {
+            if (window.innerWidth <= 767) {
+                // 이미 index.html이 아니라면 강제 이동
+                if (!window.location.pathname.endsWith("opening.html")) {
+                    window.location.href = "opening.html";
+                }
+            }
+        }
+
+        // 페이지가 처음 로드될 때 체크
+        window.addEventListener("load", redirectToMain);
+
+        // 창 크기 변경될 때도 체크
+        window.addEventListener("resize", redirectToMain);    
+    </script>
+
+</body>
+
+</html>

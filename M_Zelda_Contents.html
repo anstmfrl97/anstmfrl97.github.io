@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>젤다 컨텐츠 소개</title>
+    <link href="css/M_Contents.css" rel="stylesheet">
+    <script src="js/nav.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="menu_btn">
+                <a href="#"><img src="img/Icon/menu_open.png" alt="메뉴 열기 버튼"></a>
+                <a href="#" class="skip close"><img src="img/Icon/menu_close.png" alt="메뉴 닫기 버튼"></a>
+            </div>
+
+            <div class="logo">
+                <a href="opening.html"><img src="img/logo/header_logo.png" width="100%" alt="로고"></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="M_Zelda_Top.html">Top</a></li>
+            <li><a href="M_Zelda_World.html">World</a></li>
+            <li><a href="M_Zelda_Character.html">Character</a></li>
+            <li><a href="M_Zelda_Rune.html">Rune</a></li>
+            <li><a href="M_Zelda_Contents.html">Contents</a></li>
+            <li><a href="M_Zelda_Gaide.html">Gaide</a></li>
+            <li><a href="M_Zelda_UserPlay.html">UserPlay</a></li>
+            <li><a href="M_Zelda_Goods.html">Goods</a></li>
+        </ul>
+        <div class="nav_btn">
+            <div class="cart">
+                <a href="#"><img src="img/Icon/shopping-cart.png" width="85%" alt="장바구니 아이콘"></a>
+            </div>
+            <div class="Profile">
+                <a href="#"><img src="img/Icon/Profile.png" width="85%" alt="프로필 아이콘"></a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="parallax__cont">
+        <section id="section1" class="parallax__item">
+            <div class="parallax__item__img"></div>
+            <h3 class="title">넓은 오픈 월드</h3>
+            <h4 class="title">다양한 환경을 모험하고 살아남으세요!</h4>
+        </section>
+        <!-- //section1 -->
+
+        <section id="section2" class="parallax__item">
+            <div class="parallax__item__img"></div>
+            <h3 class="title">몬스터 무리</h3>
+            <h4 class="title" class="title">몬스터를 해치우고 무기를 업그레이드 하세요!</h4>
+        </section>
+        <!-- //section2 -->
+
+        <section id="section3" class="parallax__item">
+            <div class="parallax__item__img"></div>
+            <h3 class="title">시커타워</h3>
+            <h4 class="title">시커타워를 활성화 하고 맵을 밝히세요!</h4>
+        </section>
+        <!-- //section3 -->
+
+        <section id="section4" class="parallax__item">
+            <div class="parallax__item__img"></div>
+            <h3 class="title">이가단</h3>
+            <h4 class="title">재앙 가논을 추종하는 이가단을 해치우세요!</h4>
+        </section>
+        <!-- //section4 -->
+
+        <section id="section5" class="parallax__item">
+            <div class="parallax__item__img"></div>
+            <h3 class="title">다양한 레시피</h3>
+            <h4 class="title">요리해서 체력과 스테미나를 회복하세요.</h4>
+        </section>
+        <!-- //section5 -->
+
+        <section id="section6" class="parallax__item">
+            <div class="parallax__item__img"></div>
+            <h3 class="title">파마의 사당</h3>
+            <h4 class="title">사당을 깨고 체력과 스테미나를 늘리세요.</h4>
+        </section>
+        <!-- //section6 -->
+
+        <section id="section7" class="parallax__item">
+            <div class="parallax__item__img"></div>
+            <h3 class="title">미니게임</h3>
+            <h4 class="title">다양한 미니게임을 찾아 즐겨보세요.</h4>
+        </section>
+        <!-- //section7 -->
+
+        <section id="section8" class="parallax__item">
+            <div class="parallax__item__img"></div>
+            <h3 class="title">귀여운 요정, 코로그</h3>
+            <h4 class="title">수상한 곳에서 코로그를 찾아 가방을 늘리세요.</h4>
+        </section>
+        <!-- //section8 -->
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script>
+        // 01. 한개 섹션 고정시키기
+        // const panel = document.querySelector("#section5");
+
+        // ScrollTrigger.create({
+        //     trigger: panel,
+        //     start: "top top",
+        //     pin: true,
+        //     pinSpacing: false
+        // });
+
+        // 02. 여러개 섹션 고정시키기
+        // gsap.utils.toArray(".parallax__item").forEach((panel, i) => {
+        //     ScrollTrigger.create({
+        //         trigger: panel,
+        //         start: "top top",
+        //         pin: true,
+        //         pinSpacing: false
+        //     });
+        // });
+
+        // 03. 스냅 고정 효과 만들기
+        let panels = gsap.utils.toArray(".parallax__item");
+        let tops = panels.map(panel => ScrollTrigger.create({
+            trigger: panel,
+            start: "top top"
+        }));
+
+        panels.forEach((panel, i) => {
+            ScrollTrigger.create({
+                trigger: panel,
+                start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
+                pin: true,
+                pinSpacing: false
+            });
+        });
+
+        ScrollTrigger.create({
+            snap: {
+                snapTo: (progress, self) => {
+                    let panelStarts = tops.map(st => st.start),
+                        snapScroll = gsap.utils.snap(panelStarts, self.scroll());
+                    return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll);
+                },
+                duration: 0.5
+            }
+        });
+
+        function redirectToMain() {
+            if (window.innerWidth >= 768) {
+                // 이미 index.html이 아니라면 강제 이동
+                if (!window.location.pathname.endsWith("opening.html")) {
+                    window.location.href = "opening.html";
+                }
+            }
+        }
+
+        // 페이지가 처음 로드될 때 체크
+        window.addEventListener("load", redirectToMain);
+
+        // 창 크기 변경될 때도 체크
+        window.addEventListener("resize", redirectToMain);     
+
+    </script>
+</body>
+
+</html>
